@@ -1,0 +1,47 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+html,body{/*全体幅1200pxで*/
+    max-width: 1400px;
+    min-width: 420px;
+    margin: auto;
+    font-size: 15px;
+}
+
+#Title{/*HPタイトル作成*/
+    margin-bottom: 0rem;
+    background-image: url("img/top.jpg");
+    background-size: cover;
+    background-position: center 30%;
+
+    font-size: 5em;
+    text-decoration: none;
+}
+#Title-link:hover {
+     text-decoration: none;
+}
+
+
+#Menu-Bar {
+    font-size: 3em;
+}
+
+#carimg{
+    max-height: 40rem;
+    object-fit: cover;
+    font-family: 'object-fit: cover;'; /*IE対策*/
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.card-img-top{
+    height: 20rem;
+    object-fit: cover;
+    font-family: 'object-fit: cover;'; /*IE対策*/
+}
+
+footer{
+    text-align: center;
+}
