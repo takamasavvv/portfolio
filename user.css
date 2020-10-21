@@ -6,6 +6,7 @@ html,body{/*全体幅1200pxで*/
     min-width: 420px;
     margin: auto;
     font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #Title{/*HPタイトル作成*/
@@ -22,7 +23,7 @@ html,body{/*全体幅1200pxで*/
 }
 
 
-#Menu-Bar {
+#menubar {
     font-size: 3em;
 }
 
