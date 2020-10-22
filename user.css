@@ -17,6 +17,8 @@ html,body{/*全体幅1200pxで*/
 
     font-size: 4em;
     text-decoration: none;
+
+    user-select: none;
 }
 #Title-link:hover {
      text-decoration: none;
