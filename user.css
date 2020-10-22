@@ -22,6 +22,8 @@ html,body{/*全体幅1200pxで*/
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+
+    background-color: aqua;
 }
 #Title-link:hover {
      text-decoration: none;
