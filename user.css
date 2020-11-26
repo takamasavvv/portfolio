@@ -6,7 +6,7 @@ html,body{/*全体幅1400pxで*/
     min-width: 575px;
     margin: auto;
     font-size: 15px;
-    font-family: Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     background-image: url("img/BgImage.jpg");
 }
 
@@ -36,28 +36,22 @@ html,body{/*全体幅1400pxで*/
 }
 
 #about {
-    min-height: 800px;
-    font-family: Courier, monospace;
+    min-height: 1000px;
     background-color:rgba(255,255,255,0.9);
     background-blend-mode:lighten;
 }
 #works {
-    min-height: 800px;
-    font-family: Courier, monospace;
+    min-height: 1000px;
     background-color: rgba(91, 108, 126, 0.9);
     background-blend-mode:lighten;
 }
 #skill {
-    min-height: 800px;
-    font-family: Courier, monospace;
+    min-height: 1000px;
     background-color:rgba(255,255,255,0.9);
     background-blend-mode:lighten;
 }
 #contact {
-    min-height: 800px;
-    font-family:    "Hiragino Kaku Gothic ProN",
-    "ヒラギノ角ゴ ProN W3",
-    sans-serif;
+    min-height: 1000px;
     background-color: rgba(91, 108, 126, 0.9);
     background-blend-mode:lighten;
 }
