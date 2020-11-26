@@ -1,17 +1,20 @@
 .selector-for-some-widget {
     box-sizing: content-box;
   }
-html,body{/*全体幅1200pxで*/
-    max-width: 1400px;
+html,body{/*全体幅1400pxで*/
+    width: 100%;
     min-width: 575px;
     margin: auto;
     font-size: 15px;
     font-family: Courier, monospace;
+    background-image: url("img/BgImage.jpg");
 }
 
 #Title{/*HPタイトル作成*/
-    margin-bottom: 0rem;
-    background-image: url("img/top.jpg");
+    min-height: 300px;
+    /*margin-bottom: 0rem;*/
+    margin: auto auto auto auto;
+    background-image: url("img/CircuitImage.png");
     background-size: cover;
     background-position: center 30%;
 
@@ -22,16 +25,41 @@ html,body{/*全体幅1200pxで*/
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-
-    background-color: aqua;
 }
 #Title-link:hover {
      text-decoration: none;
 }
 
-
 #menubar {
-    font-size: 3em;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#about {
+    min-height: 800px;
+    font-family: Courier, monospace;
+    background-color:rgba(255,255,255,0.9);
+    background-blend-mode:lighten;
+}
+#works {
+    min-height: 800px;
+    font-family: Courier, monospace;
+    background-color: rgba(91, 108, 126, 0.9);
+    background-blend-mode:lighten;
+}
+#skill {
+    min-height: 800px;
+    font-family: Courier, monospace;
+    background-color:rgba(255,255,255,0.9);
+    background-blend-mode:lighten;
+}
+#contact {
+    min-height: 800px;
+    font-family:    "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3",
+    sans-serif;
+    background-color: rgba(91, 108, 126, 0.9);
+    background-blend-mode:lighten;
 }
 
 #carimg{
