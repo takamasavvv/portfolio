@@ -55,6 +55,17 @@ html,body{/*全体幅1400pxで*/
     background-color: rgba(91, 108, 126, 0.9);
     background-blend-mode:lighten;
 }
+#github::before {
+    content: '\f09b';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+#twitter::before {
+    content: '\f081';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
 
 #carimg{
     max-height: 40rem;
