@@ -3,7 +3,7 @@
   }
 html,body{/*全体幅1400pxで*/
     width: 100%;
-    min-width: 800px;
+    /*min-width: 800px;*/
     margin: auto;
     font-size: 15px;
     font-family: 'Courier New', Courier, "Meiryo";
