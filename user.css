@@ -3,10 +3,10 @@
   }
 html,body{/*全体幅1400pxで*/
     width: 100%;
-    min-width: 575px;
+    min-width: 800px;
     margin: auto;
     font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, "Meiryo";
     background-image: url("img/BgImage.jpg");
 }
 
@@ -36,52 +36,42 @@ html,body{/*全体幅1400pxで*/
 }
 
 #about {
-    min-height: 1000px;
+    min-height: auto;
     background-color:rgba(255,255,255,0.9);
     background-blend-mode:lighten;
+
+    font-size: 1.5rem;
 }
+
 #works {
-    min-height: 1000px;
+    min-height: auto;
+    
     background-color: rgba(91, 108, 126, 0.9);
     background-blend-mode:lighten;
+}
+#works-list {
+    max-width: 1600px;
+    min-width: 800px;
+
+    font-size: 1.2rem;
 }
 #skill {
-    min-height: 1000px;
+    min-height: auto;
     background-color:rgba(255,255,255,0.9);
     background-blend-mode:lighten;
 }
+#skill-list {
+    max-width: 800px;
+    min-width: 400px;
+
+    font-size: 1.5rem;
+}
 #contact {
-    min-height: 1000px;
+    min-height: 300px;
     background-color: rgba(91, 108, 126, 0.9);
     background-blend-mode:lighten;
 }
-#github::before {
-    content: '\f09b';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 400;
-}
-#twitter::before {
-    content: '\f081';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 400;
-}
 
-
-#carimg{
-    max-height: 40rem;
-    object-fit: cover;
-    font-family: 'object-fit: cover;'; /*IE対策*/
-}
-
-.carousel-caption{
-    background-color: rgba(0, 0, 0, 0.5)
-}
-
-.card-img-top{
-    height: 20rem;
-    object-fit: cover;
-    font-family: 'object-fit: cover;'; /*IE対策*/
-}
 
 footer{
     text-align: center;

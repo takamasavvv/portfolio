@@ -7,6 +7,7 @@
     <title>takamasavvv portfolio</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="user.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name=”robots” content=”noindex”>
@@ -28,28 +29,192 @@
     </nav>
 
     <main>
-        <div class="text-center p-5" id="about">
-            <p class="display-4 font-weight-bold">About</p>
+        <div class="p-5" id="about">
+            <p class="display-3 text-center font-weight-bold">About</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 d-none d-xl-block align-self-center">
+                        <img class="" src="img/AboutImage.JPG" alt="">
+                    </div>
+                    <div class="col-xl-7">
+                        <p>1994年生まれ栃木県出身のエンジニア。大学では電気工学を専攻、修士課程修了しました。
+                        サークルではロボットやロケットの製作に取り組み、主に回路設計、実装、動作テストを担当していました。
+                        研究では成層圏気球に搭載する小型自律グライダーの開発評価をテーマとし、テストフライトを実施する等継続して開発中です。</p>
+                        <p>ハードウェア開発に興味を持っており、研究室の実験で利用するインターフェース基板からアクチュエーターのモーター駆動基板、
+                        センサーロガー基板など種類問わず設計・ファームウェア開発に挑戦してきました。</p>
+                        <p>最近は趣味としてアウトドアを始めたこともあり、アウトドア向けIoTデバイスを個人で開発しています。</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="text-center text-white p-5" id="works">
-            <p class="display-4 font-weight-bold">Works</p>
+        <div class="p-5" id="works">
+            <p class="display-3 font-weight-bold text-center text-white">Works</p>
+            <div class="container" id="works-list">
+                <div class="row ">
+                    <div class="col-xl-6 p-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/works/WorksImage1-1.JPG" alt="">
+                            <div class="card-body">
+                                <p class="card-text">自律小型グライダーに搭載する姿勢検知モジュール。
+                                    加速度、角速度、コンパスの9軸コンボセンサーが搭載されており、データを組み合わせることによって機体の姿勢を取得する。
+                                    取得したデータは実装されているメモリICに記録され、同時に CAN BUS から外部にデータ送信可能。
+                                    電源はCAN BUS から供給され、汎用IOやインジケーター LED、USB シリアル通信による状態チェック機能を搭載している。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 p-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/works/WorksImage2-1.JPG" alt="">
+                            <div class="card-body">
+                              <p class="card-text">自律小型グライダーに搭載する三次元座標測定モジュール。
+                                気圧、温度、湿度に加えてGNSSモジュールを搭載することによって、地上30kmまでの緯度、経度、高度を算出する。
+                                取得したデータは実装されているメモリ IC に記録され、同時に CAN BUS から外部にデータ送信可能。
+                                GNSSモジュールの 1PPS 出力が可能となっており、外部とのクロック同期も可能である。
+                                電源は CAN BUS から供給され、インジケーター LED、USB シリアル通信による状態チェック機能を搭載している。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/works/WorksImage3-1.JPG" alt="">
+                            <div class="card-body">
+                              <p class="card-text">自律小型グライダーに搭載する地上間通信モジュール。
+                                920MHz帯無線モジュールを搭載し地上と上空の通信を確立、センサーデータの送信や緊急停止信号の受信を担う。
+                                利用するデータは実装されているメモリ IC に記録され、同時に CAN BUS から外部とのデータ送受信可能。
+                                電源は CAN BUS から供給され、インジケーター LED、USB シリアル通信による状態チェック機能を搭載している。
+                                基板に表面実装サーミスタが置かれ、異常な温度を検知した際にいち早く地上に伝達することが可能。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/works/WorksImage4.JPG" alt="">
+                            <div class="card-body">
+                              <p class="card-text">Raspberry Pi とセンサーを用いて気圧、温度、湿度のデータを取得し、データベースサーバーへ蓄積してグラフ化する IoT モジュール。
+                                チームでの開発であり、ハードウェアとraspberry pi 側のpythonプログラムを担当した。
+                                pythonでセンサーレジスタへアクセス、人間が扱う単位系に変換してGETリクエストによってデータベースサーバーへと送信している。
+                                筐体は屋外に設置する関係上、防水ケースを選定し、安定性を考慮して電源、Ethernet 共に有線で設計した。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/works/WorksImage5.JPG" alt="">
+                            <div class="card-body">
+                              <p class="card-text">面実装基板への実装を効率化するコンベンションオーブンを用いた自作リフロー炉。
+                                オーブン電源のON/OFFにソリッドステートリレーを用い、フィードバックにK型熱電対を利用している。
+                                制御用マイコンで随時現在温度をUSBシリアル通信で記録しながらスイッチのON/OFF間隔を決定している。
+                                姿勢検知モジュール、三次元座標測定モジュール、地上間通信モジュールはこのリフロー炉によって実装した。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/works/WorksImage6.JPG" alt="">
+                            <div class="card-body">
+                              <p class="card-text">小型自律グライダーに搭載するアクチュエーターへの電源供給のため製作した最大入力40V、最大電流5A出力の降圧型DCDCコンバータ。
+                                モジュール化をしたことで利用の自由度が高い構成となった。
+                                同時に抵抗計測の電力測定モジュールを製作したことで電力監視が可能となり、他デバイスの評価でも利用価値の高いものとなっている。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/works/WorksImage7.JPG" alt="">
+                            <div class="card-body">
+                              <p class="card-text">所属研究室の説明会において、工学の研究をわかりやすく高校生に伝えるため、ロケットに搭載したセンサーモジュール。
+                                加速度センサーを搭載し、マイコンによってデータを取得した後、2.4GHz帯無線で手元のPCへデータ送信を行った。
+                                回収したデータはロケットにおいて想定される加速度を示しており、高校生への説明会は無事成功した。                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <img class="card-img-top" src="img/works/WorksImage8-Code.png" alt="">
+                            <div class="card-body">
+                              <p class="card-text">実装サービスの注文時に要求されるBOMリストを基板製造会社ごとに生成できるスクリプト。
+                                KiCad の回路設計時に生成されるxml をパースして必要な項目が記されているCSVを出力する。
+                                必要な項目はconf.json によって設定可能である。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="display-4 text-white text-right">and more...</p>
+            </div>
         </div>
-        <div class="text-center p-5" id="skill">
-            <p class="display-4 font-weight-bold">Skill</p>
+        <div class="p-5" id="skill">
+            <p class="display-3 font-weight-bold text-center">Skill</p>
+            <table class="table mx-auto" id="skill-list">
+                <thead>
+                    <tr>
+                        <th scope="col">技術</th>
+                        <th scope="col">経験年数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>回路設計</td>
+                        <td>6年</td>
+                    </tr>
+                    <tr>
+                        <td>PSoC マイコン</td>
+                        <td>6年</td>
+                    </tr>
+                    <tr>
+                        <td>Arduino</td>
+                        <td>2年</td>
+                    </tr>
+                    <tr>
+                        <td>Raspberry Pi</td>
+                        <td>2年</td>
+                    </tr>
+                    <tr>
+                        <td>C言語</td>
+                        <td>6年</td>
+                    </tr>
+                    <tr>
+                        <td>python</td>
+                        <td>3年</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>6か月</td>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>1年</td>
+                    </tr>
+                    <tr>
+                        <td>KiCad</td>
+                        <td>6年</td>
+                    </tr>
+                    <tr>
+                        <td>github</td>
+                        <td>1年</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="text-center text-white p-5" id="contact">
-            <p class="display-4 font-weight-bold">Contact</p>
-            <i class="display-3 fas fa-github" id="github"></i>
-            <i class="display-3 fas fa-twitter" id="twitter"></i>
+        <div class="text-white text-center p-5" id="contact">
+            <p class="display-3 font-weight-bold">Contact</p>
+            <a href="https://github.com/takamasavvv"><i class="display-3 text-white p-3 fa fa-github"></i></a>
+            <a href="https://twitter.com/takamasavvv"><i class="display-3 text-white p-3 fa fa-twitter"></i></a>
         </div>
     </main>
 
     <footer class="footer container-fluid bg-primary text-white p-5">
-        <div id="footer">Copyright © 2020 takamasa<br class="d-inline-block d-md-none"> All Rights Reserved.</div>
+        <div id="footer">Copyright © 2020 takamasavvv<br class="d-inline-block d-md-none"> All Rights Reserved.</div>
     </footer>
 </body>
 
-<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="user.js"></script>
